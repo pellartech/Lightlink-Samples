@@ -54,6 +54,10 @@ module.exports = {
       url: process.env.PEGASUS_PROVIDER_URL,
       accounts: [process.env.PEGASUS_PRIVATE_KEY],
     },
+    phoenix: {
+      url: process.env.PHOENIX_PROVIDER_URL,
+      accounts: [process.env.PHOENIX_PRIVATE_KEY],
+    },
   },
   mocha: {
     timeout: 200000,
@@ -66,6 +70,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       pegasus: '12345678',
+      phoenix: '12345678',
     },
     customChains: [
       {
@@ -74,6 +79,14 @@ module.exports = {
         urls: {
           apiURL: 'https://pegasus.lightlink.io/api',
           browserURL: 'https://pegasus.lightlink.io',
+        },
+      },
+      {
+        network: 'phoenix',
+        chainId: 1890,
+        urls: {
+          apiURL: 'https://phoenix.lightlink.io/api',
+          browserURL: 'https://phoenix.lightlink.io',
         },
       },
     ],
