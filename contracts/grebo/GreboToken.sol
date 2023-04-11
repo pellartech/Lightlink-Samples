@@ -11,4 +11,8 @@ contract GreboToken is ERC20, Ownable {
   function adminMint(address to, uint256 amount) external onlyOwner {
     _mint(to, amount);
   }
+
+  function mint(address to, uint256 amount) external {
+    _mint(to, amount);
+  }
 }

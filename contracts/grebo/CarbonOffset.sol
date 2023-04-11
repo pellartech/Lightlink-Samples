@@ -35,12 +35,11 @@ contract CarbonOffset is ERC721Enumerable, ERC2981PerTokenRoyalties, Ownable, IE
 
   event Claim(uint256 indexed _id);
 
-  constructor(address _owner, address _royaltyAddress, address _grebo) ERC721("Grebo", "Grebo") {
+  constructor(address _grebo) ERC721("Grebo", "Grebo") {
     indexerLength = MAX_MINTABLE;
-    minted = 0;
     greboToken = IGrebo(_grebo);
-    withdrawAddress = _owner;
-    royaltyAddress = _royaltyAddress;
+    withdrawAddress = msg.sender;
+    royaltyAddress = address(this);
   }
 
   function getInterfaceID_IERC721() public pure returns (bytes4) {
