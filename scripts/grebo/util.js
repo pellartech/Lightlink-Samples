@@ -200,10 +200,9 @@ const uploadJsonToIPFS = async (data) => {
 }
 
 const mintMetadata = async (data) => {
-  // const metadata = await makeMetadata(data, 0)
-  // const link = await uploadJsonToIPFS(metadata)
+  const metadata = await makeMetadata(data, 0)
+  const link = await uploadJsonToIPFS(metadata)
   // console.log('link', link)
-  const link = 'ipfs://abcd'
 
   // LL: use LL tech
   // mint NFT on LL
