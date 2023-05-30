@@ -946,7 +946,9 @@ run
 rm -rf artifacts cache typechain-types
 npx hardhat run --network pegasus scripts/deploy/alphaa/erc1155.js
 ```
-verify contract if it is failed
+
+
+The command above will verify the contract automatically, if manual verification is required, use this command
 ```
 npx hardhat verify --network pegasus ${contract_address}
 ```
@@ -972,7 +974,7 @@ run
 rm -rf artifacts cache typechain-types
 npx hardhat run --network pegasus scripts/deploy/alphaa/erc721.js
 ```
-verify contract if it is failed
+The command above will verify the contract automatically, if manual verification is required, use this command
 ```
 npx hardhat verify --network pegasus ${contract_address}
 ```
