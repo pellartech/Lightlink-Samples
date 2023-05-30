@@ -45,8 +45,8 @@ async function main() {
     nonce += 1
   }
 
-  console.log('Waiting for 3 seconds to verify contract')
-  await sleep(3000)
+  console.log('Waiting for 30 seconds to verify contract')
+  await sleep(30000)
 
   await Promise.all(
     map(resultsAddr, (addr, idx) => {

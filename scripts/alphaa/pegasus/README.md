@@ -935,6 +935,23 @@
 
 # How to run
 ## Alphaa (ERC1155)
+### Deploy contract
+prepare your env and put in .env
+```
+PEGASUS_PROVIDER_URL=
+PEGASUS_PRIVATE_KEY=
+```
+run
+```
+rm -rf artifacts cache typechain-types
+npx hardhat run --network pegasus scripts/deploy/alphaa/erc1155.js
+```
+verify contract if it is failed
+```
+npx hardhat verify --network pegasus ${contract_address}
+```
+
+### Mint tokens
 ```
 node scripts/alphaa/alphaa.js ${token_id} ${your_account} ${amount}
 ```
@@ -944,6 +961,22 @@ node scripts/alphaa/alphaa.js 1 0x640a6D5A3f155A8F0636a0396B18Ba5eEdfab440 1
 ```
 
 ## AlphaaIO (ERC721)
+### Deploy contract
+prepare your env and put in .env
+```
+PEGASUS_PROVIDER_URL=
+PEGASUS_PRIVATE_KEY=
+```
+run
+```
+rm -rf artifacts cache typechain-types
+npx hardhat run --network pegasus scripts/deploy/alphaa/erc721.js
+```
+verify contract if it is failed
+```
+npx hardhat verify --network pegasus ${contract_address}
+```
+### Mint tokens
 ```
 node scripts/alphaa/alphaaIO.js ${your_account} ${uri}
 ```
