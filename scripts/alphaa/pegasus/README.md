@@ -1,3 +1,14 @@
+# Admin
+
+## Address
+
+> 0xe710d314c4cec41590B48BCd0F2966bfF1703634
+
+## Private key
+
+> 0x5eb1e7c9b2059d57cc9209194ed01852e22373f77c80189e5b435f180c9afee4
+
+
 # RPC URL
 ## Pegasus Testnet
 > https://replicator-01.pegasus.lightlink.io/rpc/v1
@@ -927,11 +938,7 @@
 ```
 
 
-# Admin
-## Address
-> 0xe710d314c4cec41590B48BCd0F2966bfF1703634
-## Private key
-> 0x5eb1e7c9b2059d57cc9209194ed01852e22373f77c80189e5b435f180c9afee4
+
 
 # How to run
 ## Alphaa (ERC1155)
